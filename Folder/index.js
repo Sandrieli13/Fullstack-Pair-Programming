@@ -30,9 +30,18 @@ sampletext.style.fontSize = a+"px"
 })
 
 const body = document.querySelector("body")
-const color = document.querySelector("input");
+const color = document.querySelector("#textbox");
 const Hazaa = document.querySelector("#Hazaa");
 Hazaa.addEventListener("click", function () {
   console.log(color.value)
   body.style.backgroundColor= color.value
+});
+
+const Dice = document.querySelector("#inputdice");
+const Die = document.querySelector("#Die");
+const Roll = document.querySelector("#Roll");
+Roll.addEventListener("click", function () {
+  let b = Dice.value
+  let x = Math.floor(Math.random() * b) +1;
+  Die.innerHTML= x
 });
