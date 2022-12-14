@@ -1,4 +1,4 @@
-const counter = document.querySelector("p");
+const counter = document.querySelector(".counter");
 
 let count = 0;
 counter.innerHTML= count
@@ -9,3 +9,22 @@ cookie.addEventListener("click", function () {
   counter.innerHTML= count
 });
 
+
+const sampletext = document.querySelector("#sample")
+let a = 16
+const zoomin = document.querySelector("#but1");
+zoomin.addEventListener("click", function (){
+  if(a<=99){
+    a++
+    console.log(a)
+  }
+  sampletext.style.fontSize = a+"px"
+})
+const zoomout = document.querySelector("#but2");
+zoomout.addEventListener("click", function (){
+  if(a>=2){
+  a--
+  console.log(a)
+}
+sampletext.style.fontSize = a+"px"
+})
