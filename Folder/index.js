@@ -28,3 +28,11 @@ zoomout.addEventListener("click", function (){
 }
 sampletext.style.fontSize = a+"px"
 })
+
+const body = document.querySelector("body")
+const color = document.querySelector("input");
+const Hazaa = document.querySelector("#Hazaa");
+Hazaa.addEventListener("click", function () {
+  console.log(color.value)
+  body.style.backgroundColor= color.value
+});
