@@ -41,7 +41,7 @@ let hor = -10.5
 let horhook = 0
 const left = document.querySelector("#left");
 left.addEventListener("click", function (){
-  if(hor>=-500){
+  if(hor>=-900){
     hor-=5
     horhook-=5
   }
