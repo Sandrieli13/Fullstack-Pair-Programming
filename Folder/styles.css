@@ -1,8 +1,32 @@
-img{
+#chip{
     padding: 0;
     border-radius: 100%;
     border: 2px solid
 }
 p{
     text-align: center;
+}
+#crane{
+    position: relative;
+    height: 200px
+}
+
+#crane-top{
+    width: 100%;
+    height: 20px;
+    background-image: url("https://www.dieselgasturbine.com/Images/1140xany/wpimage/2018/10/Cat-logo-new-e1540388594127.jpg");
+    background-repeat: repeat;
+
+}
+
+#rope{
+    position: relative;
+    width: 9px;
+    height: 90px;
+    background-color: black;
+    right:-10.5px
+}
+#hook{
+    position: relative;
+    width:30px
 }
