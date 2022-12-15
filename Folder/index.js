@@ -41,20 +41,19 @@ let hor = -10.5
 let horhook = 0
 const left = document.querySelector("#left");
 left.addEventListener("click", function (){
+    if(hor<=-10.5){
+      hor+=5
+      horhook+=5
+    }console.log(hor+"px")
+    rope.style.right = hor+"px"
+    hook.style.right = horhook+"px"})
+
+const right = document.querySelector("#right");
+right.addEventListener("click", function (){
   if(hor>=-900){
     hor-=5
     horhook-=5
   }
-  rope.style.right = hor+"px"
-  hook.style.right = horhook+"px"})
-
-
-const right = document.querySelector("#right");
-right.addEventListener("click", function (){
-  if(hor<=-10.5){
-    hor+=5
-    horhook+=5
-  }console.log(hor+"px")
   rope.style.right = hor+"px"
   hook.style.right = horhook+"px"})
 
