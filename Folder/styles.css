@@ -1,14 +1,35 @@
+
+body{
+    min-height: 100vh;
+    max-height: 300vh;
+    background-color: seashell
+    
+}
+h1, h3{
+    font-family: 'New Rocker';
+    padding: 10px;
+}
+.counter{
+    font-family: 'New Rocker';
+    font-size:  100px
+}
+#cookie{
+    display: flex;
+    justify-content: space-around;
+}
 #chip{
     padding: 0;
     border-radius: 100%;
     border: 2px solid
 }
 p{
+    font-family: 'Shojumaru';
     text-align: center;
 }
 #crane{
     position: relative;
-    height: 200px
+    height: 200px;
+    background: linear-gradient(295deg, skyblue, white);
 }
 
 #crane-top{
@@ -29,4 +50,14 @@ p{
 #hook{
     position: relative;
     width:30px
+}
+
+#Die{
+    text-align: center;
+    font-family: 'New Rocker';
+    font-size:  50px;
+    background-color: azure;
+    border: 20px solid black;
+    border-radius: 100%;
+    margin: 0px 320px
 }
